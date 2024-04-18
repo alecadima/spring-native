@@ -28,7 +28,7 @@ ENV JAVA_HOME=/opt/openjdk-jvmci
 RUN cd /opt/graal/vm \
  && mx --disable-polyglot --disable-libpolyglot --dynamicimports /substratevm build
 
-FROM ubuntu:focal
+FROM ubuntu:20.04
 
 ENV JAVA_HOME=/opt/java
 ENV PATH="$JAVA_HOME/bin:$PATH"
